@@ -1,0 +1,84 @@
+:root {
+    --cor-fundo: #0a0a0a;
+    --cor-principal: #111827;
+    --cor-secundaria: #1f2937;
+    --cor-destaque: #e11d48;
+    --cor-texto: #f1f5f9;
+    --fonte-musical: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    background-image: url(musical-extravaganza-musical-instruments-stage-lights-and-sound-equipment-set-the-stage-for-a-dynamic-festival-experience-ideal-for-advertising-concerts-and-music-festivals-photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(0.5);
+
+    color: var(--cor-texto);
+    font-family: var(--fonte-musical);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--cor-destaque);
+    border: 2px solid var(--cor-destaque);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--cor-destaque);
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(to right, var(--cor-destaque), #f472b6);
+    color: var(--cor-principal);
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    font-size: 1rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px var(--cor-destaque);
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    border-left: 5px solid var(--cor-destaque);
+    font-style: italic;
+    line-height: 1.5;
+}
