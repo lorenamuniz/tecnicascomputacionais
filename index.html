@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da sua música</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>🎶 Você decide o futuro da sua música 🎤</title>
 </head>
-
 <body>
     <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
-            <button class="novamente-btn">Jogar novamente</button>
-        </div>
-    </div>
-    <script type="module" src="js/aleatorio.js"></script>
-    <script type="module" src="js/perguntas.js"></script>
-    <script type="module" src="js/script.js"></script>
-</body>
 
+        <!-- Tela inicial para nome -->
+        <div class="tela-inicial">
+            <h1>🎶 Bem-vindo ao Quiz Musical 🎤</h1>
+            <p>Digite seu nome para começar:</p>
+            <input type="text" id="nomeJogador" placeholder="Seu nome..." />
+            <button id="botaoIniciar">Começar</button>
+        </div>
+
+        <!-- Tela de perguntas -->
+        <div class="tela-quiz" style="display: none;">
+            <h1 id="tituloQuiz">🎶 Você decide o futuro da sua música 🎤</h1>
+            <div class="caixa-perguntas"></div>
+            <div class="caixa-alternativas"></div>
+            <div class="caixa-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
